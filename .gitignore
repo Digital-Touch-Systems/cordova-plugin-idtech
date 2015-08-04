@@ -1,0 +1,7 @@
+node_modules
+
+src/android/libs
+
+npm-debug.log
+
+.DS_Store

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-idtech" version="0.0.1">
+  <name>Device</name>
+  <description>Cordova IDTech Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,IDTech</keywords>
+  <js-module src="www/device.js" name="device">
+    <clobbers target="device" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="IDTechPlugin">
+        <param name="android-package" value="com.idtechproducts.IDTechPlugin"/>
+      </feature>
+    </config-file>
+    <source-file src="src/android/IDTechPlugin.java" target-dir="src/com/idtechproducts" />
+    <source-file src="src/android/libs/IDT_UniMagSDKAndroid_v4.2.jar" target-dir="libs" />
+    <source-file src="src/android/libs/IDT_UsbHidSDKAndroid_v1.0.jar" target-dir="libs" />
+  </platform>
+</plugin>
