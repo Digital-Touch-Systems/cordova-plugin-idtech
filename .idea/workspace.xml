@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9c7c6afc-18db-463a-b6ae-33a0e3cab547" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/android/IDTechPlugin.java" afterPath="$PROJECT_DIR$/src/android/IDTechPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/device.js" afterPath="$PROJECT_DIR$/www/device.js" />
     </list>
     <ignored path="cordova-plugin-idtech.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="IDTechPlugin.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/android/IDTechPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.07109005" vertical-offset="0" max-vertical-offset="844">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.31990522" vertical-offset="0" max-vertical-offset="844">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -358,8 +357,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/android/IDTechPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07109005" vertical-offset="0" max-vertical-offset="844">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.31990522" vertical-offset="0" max-vertical-offset="844">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,3 +5,4 @@ src/android/libs
 npm-debug.log
 
 .DS_Store
+.idea
