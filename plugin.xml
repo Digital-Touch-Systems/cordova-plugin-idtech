@@ -15,8 +15,8 @@
         <param name="android-package" value="com.idtechproducts.IDTechPlugin"/>
       </feature>
     </config-file>
-    <source-file src="src/android/IDTechPlugin.java" target-dir="src/com/idtechproducts" />
-    <source-file src="src/android/libs/IDT_UniMagSDKAndroid_v4.2.jar" target-dir="libs" />
-    <source-file src="src/android/libs/IDT_UsbHidSDKAndroid_v1.0.jar" target-dir="libs" />
+    <source-file src="src/android/com/idtechproducts/IDTechPlugin.java" target-dir="src/com/idtechproducts" />
+    <source-file src="libs/IDT_UniMagSDKAndroid_v4.2.jar" target-dir="libs" />
+    <source-file src="libs/IDT_UsbHidSDKAndroid_v1.0.jar" target-dir="libs" />
   </platform>
 </plugin>

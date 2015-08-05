@@ -1,8 +1,8 @@
+build
 node_modules
-
-src/android/libs
+libs
 
 npm-debug.log
 
 .DS_Store
-.idea
+.idea/workspace.xml
