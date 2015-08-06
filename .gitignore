@@ -1,6 +1,6 @@
 build
 node_modules
-libs
+libs/cordova.jar
 
 npm-debug.log
 
