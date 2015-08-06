@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-idtech",
+  "version": "0.0.1",
+  "description": "IDTech card reader plug-in for Cordova.",
+  "main": "www/device.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-Touch-Systems/cordova-plugin-idtech.git"
+  }
+}

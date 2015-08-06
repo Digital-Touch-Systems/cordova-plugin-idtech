@@ -1,15 +1,27 @@
+package com.idtechproducts;
+
 import org.apache.cordova.*;
 import org.json.*;
 
 public class IDTechPlugin extends CordovaPlugin {
+    private UsbHidCardInfoProvider _reader;
+
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
-        if (action.equals("greet")) {
+        if (action.equals("startCardReader")) {
+            _reader = new UsbHidCardInfoProvider(this.webView.getContext(), callbackContext);
+            return true;
+        }
+        else if (action.equals("stopCardReader")) {
+            if (_reader != null) {
+                _reader.dispose();
+                _reader = null;
+            }
+            else {
+              System.out.println("Missing UsbHidCardInfoProvider");
+            }
 
-            String name = data.getString(0);
-            String message = "Hello, " + name;
-            callbackContext.success(message);
-
+            callbackContext.success();
             return true;
 
         } else {

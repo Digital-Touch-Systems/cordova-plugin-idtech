@@ -5,8 +5,8 @@
   <description>Cordova IDTech Plugin</description>
   <license>Apache 2.0</license>
   <keywords>cordova,IDTech</keywords>
-  <js-module src="www/device.js" name="device">
-    <clobbers target="device" />
+  <js-module src="www/device.js" name="IDTech">
+    <clobbers target="IDTech" />
   </js-module>
 
   <platform name="android">
@@ -15,8 +15,15 @@
         <param name="android-package" value="com.idtechproducts.IDTechPlugin"/>
       </feature>
     </config-file>
+    <config-file target="AndroidManifest.xml" parent="/manifest">
+      <uses-feature android:name="android.hardware.usb.host" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    </config-file>
+    <source-file src="src/android/com/idtechproducts/CardReadErrorCause.java" target-dir="src/com/idtechproducts" />
     <source-file src="src/android/com/idtechproducts/IDTechPlugin.java" target-dir="src/com/idtechproducts" />
-    <source-file src="libs/IDT_UniMagSDKAndroid_v4.2.jar" target-dir="libs" />
+    <source-file src="src/android/com/idtechproducts/UsbHidCardInfoProvider.java" target-dir="src/com/idtechproducts" />
+    <source-file src="src/android/com/idtechproducts/UsbHidListener.java" target-dir="src/com/idtechproducts" />
     <source-file src="libs/IDT_UsbHidSDKAndroid_v1.0.jar" target-dir="libs" />
+    <!--<source-file src="libs/IDT_UniMagSDKAndroid_v4.2.jar" target-dir="libs" />-->
   </platform>
 </plugin>
