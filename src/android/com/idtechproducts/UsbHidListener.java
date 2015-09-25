@@ -28,23 +28,29 @@ public class UsbHidListener implements IDTechUsbHidMsg {
     public void onReceiveMsgCommandTimeout()
     {
         System.out.println("UsbHidCardInfoProvider: OnReceiveMsgCommandTimeout");
+
+        _provider.cardReadError(CardReadErrorCause.ConnectTimeout);
     }
 
     public void onReceiveMsgConnected()
     {
         System.out.println("UsbHidCardInfoProvider: OnReceiveMsgConnected");
-        
+
         _provider.startSwipeCard();
     }
 
     public void onReceiveMsgDisconnected()
     {
         System.out.println("UsbHidCardInfoProvider: OnReceiveMsgDisconnected");
+
+        _provider.cardReadError(CardReadErrorCause.Disconnect);
     }
 
     public void onReceiveMsgFailureInfo(int p0)
     {
         System.out.println("UsbHidCardInfoProvider: OnReceiveMsgFailureInfo: " + p0);
+
+        _provider.cardReadError(CardReadErrorCause.ReadError);
     }
 
     public void onReceiveMsgSwipeTimeout()

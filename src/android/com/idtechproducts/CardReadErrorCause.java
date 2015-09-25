@@ -2,5 +2,6 @@ package com.idtechproducts;
 
 public enum CardReadErrorCause {
     ConnectTimeout,
-    ReadError
+    ReadError,
+    Disconnect
 }
