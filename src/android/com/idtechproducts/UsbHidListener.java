@@ -33,6 +33,8 @@ public class UsbHidListener implements IDTechUsbHidMsg {
     public void onReceiveMsgConnected()
     {
         System.out.println("UsbHidCardInfoProvider: OnReceiveMsgConnected");
+        
+        _provider.startSwipeCard();
     }
 
     public void onReceiveMsgDisconnected()

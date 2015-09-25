@@ -19,8 +19,15 @@ public class UsbHidCardInfoProvider {
     }
 
     public void dispose() {
+        if (_reader.isReaderConnected())
+          _reader.stopSwipeCard();
+
         _reader.unregisterListen();
         _reader = null;
+    }
+
+    public void startSwipeCard() {
+      _reader.startSwipeCard();
     }
 
     public void cardReadResult(String data) {
